@@ -1,0 +1,143 @@
+@font-face{
+    font-family: "Poppins";
+    font-weight: normal;
+    src: url("Poppins-Regular.ttf"), url("Poppins-Medium.ttf");
+    /*Par défaut, la balise body possède des marges margin de 8px.*/
+}
+@font-face{
+    font-family: "Poppins";
+    font-weight: bold;
+    src: url("Poppins-Medium.ttf");
+}
+
+body{
+    font-family: "Poppins", "Verdana", sans-serif;
+    margin: 0;
+}
+
+nav{
+    height:70px;
+    display:flex;
+}
+.secondary-block{
+    color:white;
+    background-color: #0475ba;
+}
+a{
+    color:white;
+}
+nav h2{
+    margin:0;
+    padding:20px 0 20px 15px;
+}
+nav ul{
+    display: none;
+    margin:0;
+    padding:24px;
+    list-style: none;
+}
+nav li{
+    margin-left: 15px; 
+} 
+
+@media (min-width: 768px){
+    nav ul{
+        display: flex;
+    }/*quand la taile d'écran est plus petit de 768px, les liens disparus*/
+
+    header .content {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .content {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    h3{
+        text-align: left;
+    }
+}
+
+header{
+    padding: 40px; 
+    text-align : center;
+}
+
+header h2{
+    color:#0475ba;
+}
+img{
+    width:150px;
+    border-radius: 75px;
+    box-shadow: 3px 3px 6px rgb(170, 170,170);
+    display: right;
+    margin-left: 40px;
+}
+
+.content{
+    max-width: 800px;
+    margin:0 auto;
+    /* 0 marges verticales + un centrage horizontal */ 
+}
+
+
+section{
+    padding : 40px;
+}
+
+.secondary-block{
+    color: white;
+    background-color: #0475ba;
+}
+
+aside{
+    font-weight: 1.5em;
+}
+
+#xp h3{
+    color: #0475ba
+}
+#xp ul{
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+#xp li{
+    margin-bottom: 10px;
+}
+#xp aside{
+    float: right;
+}
+#ex p{
+    font-size: 2em;
+}
+
+
+#education ul{
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+}
+#education aside{
+    float: right;
+}
+
+#passion h3{
+    color: #0475ba;
+}
+
+footer{
+    padding:40px;
+} /*footer html construction est différent de correction my_cv_solution*/
+footer ul{      
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.link{
+    margin: 0 auto;
+    display: inline-block; /*correct flex pour moi ne marche pas*/
+    width: 350px;
+}
